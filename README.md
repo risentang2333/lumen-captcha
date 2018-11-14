@@ -20,7 +20,7 @@ or
 ```json
 {
     "require": {
-        "laravel/lumen-framework": "5.3.*",
+        "laravel/lumen-framework": "5.5.*",
         "risentang/lumen-captcha": "v1.0"
     },
     "minimum-stability": "dev"
