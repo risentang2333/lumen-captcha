@@ -1,14 +1,14 @@
 {
-    "name": "aishan/lumen-captcha",
+    "name": "risentang/lumen-captcha",
     "description": "captcha for lumen",
     "keywords": ["lumen Captcha", "lumen Security", "Captcha for api"],
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "aishan",
-            "email": "aishan520315@vip.126.com",
-            "homepage": "http://www.aishan100.com"
+            "name": "risentang",
+            "email": "magicheart@163.com",
+            "homepage": "http://www.magicheart.win"
         }
     ],
     "require": {
@@ -22,7 +22,7 @@
     },
     "autoload": {
       "psr-4": {
-        "Aishan\\LumenCaptcha\\": "src/"
+        "Risentang\\LumenCaptcha\\": "src/"
       },
       "files": [
         "src/helpers.php"

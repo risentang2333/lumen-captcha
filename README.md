@@ -2,6 +2,8 @@
 
 本项目修改自 [Captcha for Laravel 5](https://github.com/mewebstudio/captcha).
 
+注：非常感谢 [aishan/lumen-captcha](https://github.com/aishan/lumen-captcha.git)提供的无状态缓存版接口验证码，
+但由于lumen5.3中的内核与lumen5.5的内核有不同。所以本人经过修改调试，弄出支持lumen5.5的无状态缓存版接口验证码。
 
 ## 预览效果图
 ![Preview](http://i.imgur.com/HYtr744.png)
@@ -10,7 +12,7 @@
 * 项目必须启用缓存才能使用，因为验证码和验证码绑定的uuid都是保存在缓存的。
 project's `composer.json`.
 ```json
-composer require aishan/lumen-captcha
+composer require risentang/lumen55-captcha
 ```
 
 or
@@ -19,7 +21,7 @@ or
 {
     "require": {
         "laravel/lumen-framework": "5.3.*",
-        "aishan/lumen-captcha": "v1.3"
+        "risentang/lumen55-captcha": "v1.3"
     },
     "minimum-stability": "dev"
 }
@@ -31,8 +33,8 @@ or
 
 ```php
     //验证码
-    $app->register(Aishan\LumenCaptcha\CaptchaServiceProvider::class);
-    class_alias('Aishan\LumenCaptcha\Facades\Captcha','Captcha');
+    $app->register(Risentang\LumenCaptcha\CaptchaServiceProvider::class);
+    class_alias('Risentang\LumenCaptcha\Facades\Captcha','Captcha');
 ```
 
 

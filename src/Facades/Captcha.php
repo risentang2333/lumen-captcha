@@ -1,6 +1,6 @@
 <?php
 
-namespace Aishan\LumenCaptcha\Facades;
+namespace Risentang\LumenCaptcha\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

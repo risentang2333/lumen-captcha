@@ -1,6 +1,6 @@
 <?php
 
-namespace Aishan\LumenCaptcha;
+namespace Risentang\LumenCaptcha;
 
 use Illuminate\Http\Request;
 use Laravel\Lumen\Routing\Controller;
@@ -15,7 +15,7 @@ class LumenCaptchaController extends Controller
    /* /**
      * get CAPTCHA
      *
-     * @param \Aishan\LumenCaptcha\CaptchaService $captcha
+     * @param \Risentang\LumenCaptcha\CaptchaService $captcha
      * @param string $config
      * @return \Intervention\Image\ImageManager->response
      */
@@ -45,7 +45,7 @@ class LumenCaptchaController extends Controller
             'captchaUrl'=>$urlDomain.'/captcha/'.$type.'/'.$captchaUuid,
             'captchaUuid'=>(string)$captchaUuid
         ];
-        return makeSuccessMsg($captchaData);
+        return $captchaData;
     }
 
     /**

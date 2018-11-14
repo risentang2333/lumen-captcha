@@ -1,8 +1,8 @@
 <?php
 
-namespace Aishan\LumenCaptcha;
+namespace Risentang\LumenCaptcha;
 
-use Aishan\LumenCaptcha\Captcha;
+use Risentang\LumenCaptcha\Captcha;
 use Illuminate\Support\ServiceProvider;
 
 /**
@@ -19,8 +19,8 @@ class CaptchaServiceProvider extends ServiceProvider {
     public function boot()
     {
         // HTTP routing
-        $this->app->get('captchaInfo[/{type}]', 'Aishan\LumenCaptcha\LumenCaptchaController@getCaptchaInfo');
-        $this->app->get('captcha/{type}/{captchaId}', 'Aishan\LumenCaptcha\LumenCaptchaController@getCaptcha');
+        $this->app->router->get('captchaInfo[/{type}]', 'Risentang\LumenCaptcha\LumenCaptchaController@getCaptchaInfo');
+        $this->app->router->get('captcha/{type}/{captchaId}', 'Risentang\LumenCaptcha\LumenCaptchaController@getCaptcha');
 
         // Validator extensions
         $this->app['validator']->extend('captcha', function($attribute, $value, $parameters)
