@@ -12,7 +12,7 @@
 * 项目必须启用缓存才能使用，因为验证码和验证码绑定的uuid都是保存在缓存的。
 project's `composer.json`.
 ```json
-composer require risentang/lumen55-captcha
+composer require risentang/lumen-captcha
 ```
 
 or
@@ -21,7 +21,7 @@ or
 {
     "require": {
         "laravel/lumen-framework": "5.3.*",
-        "risentang/lumen55-captcha": "v1.3"
+        "risentang/lumen-captcha": "v1.3"
     },
     "minimum-stability": "dev"
 }
