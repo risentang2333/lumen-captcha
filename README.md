@@ -21,7 +21,7 @@ or
 {
     "require": {
         "laravel/lumen-framework": "5.5.*",
-        "risentang/lumen-captcha": "v1.0"
+        "risentang/lumen-captcha": "^1.0"
     },
     "minimum-stability": "dev"
 }
